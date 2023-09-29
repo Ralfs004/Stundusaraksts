@@ -1,23 +1,26 @@
+import Diena from "./Diena";
+  
 
 function App() {
-  return(
-  <table>
-<h1>Pirmdiena
-  <li>
-    Programmesana
-  </li>
-  <li>
-  Dabaszinibas
-  </li>
-  <li>
-    Socialas zinibas
-  </li>
-  <li>
-    Krievu valoda
-  </li>
-</h1>
+  const PirmdienasStundas = [
+    "Sports",
+    "Dabaszinibas",
+    "Vesture",
+    "Krievu valoda"
+]
 
-  </table>);
+const OtrdienasStundas = [
+    "Matematika",
+    "Datorsistemas",
+    "Dabaszinibas",
+    "Matematika"
+]
+  
+  return(
+  <>
+  <Diena diena="pirmdiena"/>
+
+  </>);
 }
 
 export default App;
