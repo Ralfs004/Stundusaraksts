@@ -14,19 +14,56 @@ function App() {
     "datorsistemas un datortikli",
     "dabaszinibas", 
     "matematika"];
+    
+  const visasStundas = [
+    {diena: "Pirmdiena",
+  stundas: [
+       "sports",
+       "dabaszinibas",
+       "vesture un socialas zinibas", 
+       "krievu valoda"]},
+
+
+    {diena: "Otrdiena",
+    stundas: [  
+        "matematikas specialas nodalas",
+        "datorsistemas un datortikli",
+        "dabaszinibas", 
+        "matematika"]},
+
+
+        {diena: "Tresdiena",
+        stundas: [  
+        "matematikas specialas nodalas",
+        "datorsistemas un datortikli",
+        "dabaszinibas", 
+        "matematika"]},
+
+
+     {diena: "Ceturtdiena",
+    stundas: [  
+        "matematikas specialas nodalas",
+        "datorsistemas un datortikli",
+        "dabaszinibas", 
+        "matematika"]},
+
+
+     {diena: "Piektdiena",
+    stundas: [  
+        "matematikas specialas nodalas",
+        "datorsistemas un datortikli",
+        "dabaszinibas", 
+        "matematika"]}
+  ];
+
+        const dienasJSX = visasStundas.map((diena, indekss) => {
+        return <Diena key= {indekss} diena = {diena.diena} stundas = {diena.stundas}  />
+        
+        });
   return (
     <>
-    
-    <Diena Diena="pirmdiena" stundas={pirmdienasStundas}/>
-    <Diena Diena="otrdiena" stundas={otradienasStundas}/>
-    {/* <Diena Diena="tresdiena"/>
-    <Diena Diena="ceturdiena"/>
-    <Diena Diena="piekdiena"/> */}
-    </>
-  )
-  
-  
-  
-}
-
+{dienasJSX}
+</>
+  );
+  }    
 export default App;

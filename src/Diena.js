@@ -7,7 +7,7 @@ function Diena(props) {
   
   });
 
-
+  
     return(
         <>
     <h2>{props.diena}</h2>
