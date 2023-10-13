@@ -1,0 +1,8 @@
+:root {
+    font-family: sans-serif;
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgb(68, 68, 68) 31%, rgb(43, 126, 58) 87%, rgba(0, 255, 98, 0.69) 100%);}
+
+
+    li{list-style: none;
+}
